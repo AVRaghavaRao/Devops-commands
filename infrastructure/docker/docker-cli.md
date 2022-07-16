@@ -96,3 +96,9 @@ Restore the volume with a tarball archive.
 ## Troubleshooting
 ### Networking
 `docker run --name netshoot --rm -it nicolaka/netshoot /bin/bash`
+docker info
+docker netwrok ls
+sudo apt-get update bridge-utils -y --> To donwload bridge utilities in order to run bridge based commands.
+brctl show --> To show all bridges in the vm
+ip a --> To see available bridges with IP
+docker inspect <Network Id> --> To see network info
