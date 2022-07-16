@@ -102,5 +102,9 @@ COMMAND | DESCRIPTION
 'docker netwrok ls' | Network list
 'sudo apt-get update bridge-utils -y' | donwload bridge utilities in order to run bridge based commands.
 'brctl show' | To show all bridges in the vm
-'ip a' --> show available bridges with IP
-'docker inspect <Network Id>' | show network info
+'ip a'| show available bridges with IP
+'docker inspect <Network Id>' | show detailed network info
+'docker network connect <container Id>' | Connect container to a netwrok
+'docker network disconnect <container Id>' | disconnect container to a netwrok
+'docker network prune' | Removes all unused networks
+'docker netwrok rm' | removes one or more network
